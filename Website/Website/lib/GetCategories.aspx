@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GetCategories.aspx.cs" Inherits="Website.lib.GetCategories" %>
