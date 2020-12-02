@@ -1,38 +1,36 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Website.Pages.index" %>
-<!--
 <!DOCTYPE html>
-
 <html>
-<head runat="server">
-    <meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portal ETECAF</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-    <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
-   //<script type="text/javascript" src="../js/GetCategories.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/estiloGeral.css">
 </head>
 <body>
-  <form runat="server">
 	<div class="barraAzul"></div>
 	<main class="">
 		<header>
-			<a href="#"><img src="../images/logo.png"></a>
+			<a href="index.html"><img src="images/logo.png"></a>
 			<p class="subtituloLogo">Portal de Notícias da ETECAF - 24/08/2020</p>
 		</header>
 	</main>
 	
 
 	<nav>
-		<div id="categoriesMenu" class="conteudoMenu">
+		<div class="conteudoMenu">
+			<a class="mnuLink" href="index.html?c=1">Política</a>
+			<a class="mnuLink" href="index.html?c=2">Economia</a>
+			<a class="mnuLink" href="index.html?c=3">Internacional</a>
+			<a class="mnuLink" href="index.html?c=4">Educação</a>
+			<a class="mnuLink" href="index.html?c=5">Tecnologia</a>
+			<a class="mnuLink" href="index.html?c=6">Cultura</a>
 		</div>
 	</nav>
 
 	<section id="principal">
-        <div class="fl">
-        <asp:Literal ID="noticias" runat="server">
-		<!--<div ID="noticias" class="fl">-->
+		<div id="noticias" class="fl">
 			<!--<div class="col1de1">
 				<a href="noticia.html" class="linkPadrao">
 				<img class="imgCol1de1" src="images/noticias/1.jpg">
@@ -97,13 +95,11 @@
 				</a>
 			</div>
 			
-			<div class="cls"></div>
-		</asp:Literal>
-        </div>
+			<div class="cls"></div> -->
+		</div>
 		<div class="cls"></div>
 	</section>
 	<div class="barraAzul"></div>
-  </form>
+	
 </body>
 </html>
--->

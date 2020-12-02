@@ -12,7 +12,7 @@ namespace Website.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            News news = new News();
+           /* News news = new News();
 
             List<News> newsList = news.GetAll();
 
@@ -28,6 +28,19 @@ namespace Website.Pages
 				    noticias.Text += "</a></div>";
                 }
             }
+             */
+
+            DataBase Classe = new DataBase();
+            Classe.openBar("localhost", "root", "root", "prjNoticias");
+            Classe.getCommand("SELECT * FROM noticia");
+            string Boku = "";
+            while (Classe.Selected.Read()){
+                Boku += Classe.Selected["cd_noticia"] + "☺" + Classe.Selected["nm_titulo"] + "☺" + Classe.Selected["ds_noticia"] + "☺" + Classe.Selected["cd_categoria"] + "☻";
+
+            }
+
+            Response.Write(Boku);
+
         }
     }
 }

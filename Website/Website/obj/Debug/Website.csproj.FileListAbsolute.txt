@@ -4,3 +4,9 @@ C:\Users\Guilherme\Desktop\prjNoticias_32867\Website\Website\bin\Website.pdb
 C:\Users\Guilherme\Desktop\prjNoticias_32867\Website\Website\bin\MySql.Data.dll
 C:\Users\Guilherme\Desktop\prjNoticias_32867\Website\Website\obj\Debug\Website.dll
 C:\Users\Guilherme\Desktop\prjNoticias_32867\Website\Website\obj\Debug\Website.pdb
+C:\Users\NeroH\OneDrive\Documentos\BOY\news\Website\Website\bin\Website.dll
+C:\Users\NeroH\OneDrive\Documentos\BOY\news\Website\Website\bin\Website.pdb
+C:\Users\NeroH\OneDrive\Documentos\BOY\news\Website\Website\bin\MySql.Data.dll
+C:\Users\NeroH\OneDrive\Documentos\BOY\news\Website\Website\obj\Debug\Website.csprojResolveAssemblyReference.cache
+C:\Users\NeroH\OneDrive\Documentos\BOY\news\Website\Website\obj\Debug\Website.dll
+C:\Users\NeroH\OneDrive\Documentos\BOY\news\Website\Website\obj\Debug\Website.pdb
