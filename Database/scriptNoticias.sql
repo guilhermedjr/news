@@ -20,7 +20,6 @@ Create Table situacao_noticia
 (
 	cd_situacao_noticia int,
     nm_situacao_noticia varchar(45),
-
 	constraint pk_situacao_noticia primary key (cd_situacao_noticia)
 );
 
