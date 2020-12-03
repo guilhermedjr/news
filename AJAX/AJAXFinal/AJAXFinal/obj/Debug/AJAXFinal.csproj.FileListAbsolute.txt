@@ -1,0 +1,6 @@
+C:\Users\NeroH\OneDrive\Documentos\BOY\news\AJAX\AJAXFinal\AJAXFinal\bin\AJAXFinal.dll
+C:\Users\NeroH\OneDrive\Documentos\BOY\news\AJAX\AJAXFinal\AJAXFinal\bin\AJAXFinal.pdb
+C:\Users\NeroH\OneDrive\Documentos\BOY\news\AJAX\AJAXFinal\AJAXFinal\obj\Debug\AJAXFinal.dll
+C:\Users\NeroH\OneDrive\Documentos\BOY\news\AJAX\AJAXFinal\AJAXFinal\obj\Debug\AJAXFinal.pdb
+C:\Users\NeroH\OneDrive\Documentos\BOY\news\AJAX\AJAXFinal\AJAXFinal\bin\MySql.Data.dll
+C:\Users\NeroH\OneDrive\Documentos\BOY\news\AJAX\AJAXFinal\AJAXFinal\obj\Debug\AJAXFinal.csprojResolveAssemblyReference.cache
