@@ -14,7 +14,7 @@ namespace AJAXFinal
         {
             DataBase Classe = new DataBase();
             Classe.openBar("localhost", "root", "root", "prjNoticias");
-            Classe.getCommand("SELECT * FROM noticia");
+            Classe.getCommand("SELECT * FROM noticia WHERE cd_situacao_noticia = 2");
             string Boku = "";
             while (Classe.Selected.Read())
             {
