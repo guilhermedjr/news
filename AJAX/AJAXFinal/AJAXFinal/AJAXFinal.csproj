@@ -58,6 +58,7 @@
     <Content Include="css\estiloNoticia.css" />
     <Content Include="images\logo.png" />
     <Content Include="images\noticias\1.jpg" />
+    <Content Include="images\noticias\10.jpg" />
     <Content Include="images\noticias\2.jpg" />
     <Content Include="images\noticias\3.jpg" />
     <Content Include="images\noticias\4.jpg" />
