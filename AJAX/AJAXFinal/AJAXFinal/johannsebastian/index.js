@@ -1,9 +1,14 @@
 ﻿window.onload = initPage;
 
+function Taker(Code){
+  sessionStorage.setItem('Code',Code);
+  alert(sessionStorage.getItem('Code'));
+
+}
+
 function initPage() {
   sessionStorage.setItem('Combox',1);
        $.post("index.aspx",null,function(Ciocollata){
-        console.log(Ciocollata);
         let Noticer = Ciocollata.split('☻');
         Noticer.pop();
         Noticer.forEach(element => {
@@ -15,7 +20,7 @@ function initPage() {
                 Inserter.innerHTML += 
                 `
                 <div class="col1de1">
-                  <a href="noticia.html?n=${Separar[0]}" class="linkPadrao">
+                  <a href="noticia.html?n=${Separar[0]}" class="linkPadrao" onclick="Taker(${Separar[0]})">
                     <img class="imgCol1de1" src="images/noticias/${Separar[0]}.jpg">
                     <h1 class="titulo">${Separar[1]}</h1>
                     <h2 class="linhaFina">${Separar[2]}</h2>
@@ -30,7 +35,7 @@ function initPage() {
                 Inserter.innerHTML += 
                 `
                 <div class="col1de2">
-                  <a href="noticia.html?n=${Separar[0]}" class="linkPadrao">
+                  <a href="noticia.html?n=${Separar[0]}" class="linkPadrao" onclick="Taker(${Separar[0]})">
                     <img class="imgCol1de2" src="images/noticias/${Separar[0]}.jpg">
                     <h1 class="titulo">${Separar[1]}</h1>
                     <h2 class="linhaFina">${Separar[2]}</h2>
@@ -45,7 +50,7 @@ function initPage() {
                 Inserter.innerHTML += 
                 `
                 <div class="col1de2">
-                  <a href="noticia.html?n=${Separar[0]}" class="linkPadrao">
+                  <a href="noticia.html?n=${Separar[0]}" class="linkPadrao" onclick="Taker(${Separar[0]})">
                     <img class="imgCol1de2" src="images/noticias/${Separar[0]}.jpg">
                     <h1 class="titulo">${Separar[1]}</h1>
                     <h2 class="linhaFina">${Separar[2]}</h2>
@@ -60,7 +65,7 @@ function initPage() {
                 Inserter.innerHTML += 
                 `
                 <div class="col1de3">
-                  <a href="noticia.html?n=${Separar[0]}" class="linkPadrao">
+                  <a href="noticia.html?n=${Separar[0]}" class="linkPadrao" onclick="Taker(${Separar[0]})">
                     <img class="imgCol1de3" src="images/noticias/${Separar[0]}.jpg">
                     <h1 class="titulo">${Separar[1]}</h1>
                     <h2 class="linhaFina">${Separar[2]}</h2>
@@ -75,7 +80,7 @@ function initPage() {
                 Inserter.innerHTML += 
                 `
                 <div class="col1de3">
-                  <a href="noticia.html?n=${Separar[0]}" class="linkPadrao">
+                  <a href="noticia.html?n=${Separar[0]}" class="linkPadrao" onclick="Taker(${Separar[0]})">
                     <img class="imgCol1de3" src="images/noticias/${Separar[0]}.jpg">
                     <h1 class="titulo">${Separar[1]}</h1>
                     <h2 class="linhaFina">${Separar[2]}</h2>
@@ -90,7 +95,7 @@ function initPage() {
                 Inserter.innerHTML += 
                 `
                 <div class="col1de3">
-                  <a href="noticia.html?n=${Separar[0]}" class="linkPadrao">
+                  <a href="noticia.html?n=${Separar[0]}" class="linkPadrao" onclick="Taker(${Separar[0]})">
                     <img class="imgCol1de3" src="images/noticias/${Separar[0]}.jpg">
                     <h1 class="titulo">${Separar[1]}</h1>
                     <h2 class="linhaFina">${Separar[2]}</h2>
@@ -105,7 +110,7 @@ function initPage() {
                 Inserter.innerHTML += 
                 `
                 <div class="col1de3">
-                  <a href="noticia.html?n=${Separar[0]}" class="linkPadrao">
+                  <a href="noticia.html?n=${Separar[0]}" class="linkPadrao" onclick="Taker(${Separar[0]})">
                     <img class="imgCol1de3" src="images/noticias/${Separar[0]}.jpg">
                     <h1 class="titulo">${Separar[1]}</h1>
                     <h2 class="linhaFina">${Separar[2]}</h2>
@@ -120,7 +125,7 @@ function initPage() {
                 Inserter.innerHTML += 
                 `
                 <div class="col1de3">
-                  <a href="noticia.html?n=${Separar[0]}" class="linkPadrao">
+                  <a href="noticia.html?n=${Separar[0]}" class="linkPadrao" onclick="Taker(${Separar[0]})">
                     <img class="imgCol1de3" src="images/noticias/${Separar[0]}.jpg">
                     <h1 class="titulo">${Separar[1]}</h1>
                     <h2 class="linhaFina">${Separar[2]}</h2>
@@ -135,7 +140,7 @@ function initPage() {
                 Inserter.innerHTML += 
                 `
                 <div class="col1de3">
-                  <a href="noticia.html?n=${Separar[0]}" class="linkPadrao">
+                  <a href="noticia.html?n=${Separar[0]}" class="linkPadrao" onclick="Taker(${Separar[0]})">
                     <img class="imgCol1de3" src="images/noticias/${Separar[0]}.jpg">
                     <h1 class="titulo">${Separar[1]}</h1>
                     <h2 class="linhaFina">${Separar[2]}</h2>
