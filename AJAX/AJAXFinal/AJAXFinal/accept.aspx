@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="accept.aspx.cs" Inherits="AJAXFinal.accept" %>
