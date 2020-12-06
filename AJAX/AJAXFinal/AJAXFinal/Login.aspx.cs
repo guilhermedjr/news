@@ -16,7 +16,7 @@ namespace AJAXFinal
             string Log = Request["L"];
             string Pass= Request["P"];
             Classe.openBar("localhost", "root", "root", "prjNoticias");
-            Classe.getCommand("SELECT nm_login, nm_senha, cd_tipo_usuario FROM usuario u join tipo_usuario t on (u.cd_tipo_usuario = t.cd_tipo_usuario) WHERE nm_login = '" + Log + "' and nm_senha = MD5('" + Pass + "')");
+            Classe.getCommand("SELECT nm_login, nm_senha, nm_tipo_usuario FROM usuario u join tipo_usuario t on (u.cd_tipo_usuario = t.cd_tipo_usuario) WHERE nm_login = '" + Log + "' and nm_senha = MD5('" + Pass + "')");
             string Boku = "false";
             while (Classe.Selected.Read())
             {
@@ -24,7 +24,7 @@ namespace AJAXFinal
                 {
                     if (Classe.Selected["nm_senha"].ToString() != null || Classe.Selected["nm_senha"].ToString() != "")
 	                {
-                        Boku = Classe.Selected["cd_tipo_usuario"].ToString();
+                        Boku = Classe.Selected["nm_tipo_usuario"].ToString();
 		 
 	                }
 

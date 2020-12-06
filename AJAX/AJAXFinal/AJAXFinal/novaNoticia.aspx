@@ -7,25 +7,33 @@
     <title></title>
 </head>
 <body>
+
     <form id="form1" runat="server">
-    <div>
-        <input class="txt" type="text" id="lname" name="lname" placeholder="Título"><br>
-            <input class="txt" type="text" id="lname" name="lname" placeholder="Linha Fina"><br>
-            <textarea class="txtG" placeholder="Texto">a</textarea>
+    <div id="Classer">
+        <asp:TextBox ID="Titulo" runat="server"></asp:TextBox>
+        <asp:TextBox ID="LinhaFina" runat="server"></asp:TextBox>
+        <asp:TextBox ID="Noticia" runat="server"></asp:TextBox>
 
-            <select class="select" name="select">
-                <option value="valor1">Valor 1</option> 
-                <option value="valor2" selected>Valor 2</option>
-                <option value="valor3">Valor 3</option>
-            </select>
+            <asp:DropDownList ID="Categoria" runat="server">
+                <asp:ListItem Text="Política" Value="1"/>
+                <asp:ListItem Text="Economia" Value="2"/>
+                <asp:ListItem Text="Internacional" Value="3"/>
+                <asp:ListItem Text="Educação" Value="4"/>
+                <asp:ListItem Text="Tecnologia" Value="5"/>
+                 <asp:ListItem Text="Cultura" Value="6"/>
 
-            <div class="areaFileUpload">
-                a
-            </div>
+            </asp:DropDownList>
 
-            <a class="botao">Enviar</a>
-    
+        <asp:FileUpload ID="Image" runat="server" />
+        <asp:Button ID="Submiter" runat="server" Text="Button" 
+            onclick="Submiter_Click" />
+
     </div>
     </form>
+        
+    <script>
+        var Sub = document.querySelector("#Submiter");
+        Sub.ID = (sessionStorage.getItem('Login'));
+    </script>
 </body>
 </html>
