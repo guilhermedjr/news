@@ -71,6 +71,9 @@
     <Content Include="index.html" />
     <Content Include="johannsebastian\index.js" />
     <Content Include="johannsebastian\jquery-3.5.1.min.js" />
+    <Content Include="log.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="login.html" />
     <Content Include="Noticer.aspx" />
     <Content Include="noticia.aspx" />
     <Content Include="noticia.html" />
@@ -90,6 +93,20 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="log.aspx.cs">
+      <DependentUpon>log.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="log.aspx.designer.cs">
+      <DependentUpon>log.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Noticer.aspx.cs">
       <DependentUpon>Noticer.aspx</DependentUpon>
