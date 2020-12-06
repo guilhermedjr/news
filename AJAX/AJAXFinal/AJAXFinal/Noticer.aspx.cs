@@ -8,18 +8,23 @@ using MySql.Data;
 
 namespace AJAXFinal
 {
-    public partial class noticia : System.Web.UI.Page
+    public partial class Noticer : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             DataBase Classe = new DataBase();
-            string Code = Request["C"];
+            string Code = Request["Ca"];
+            string VARE = Request["V"];
             Classe.openBar("localhost", "root", "root", "prjNoticias");
-            Classe.getCommand("SELECT * FROM noticia n join usuario u ON (n.nm_login = u.nm_login) WHERE cd_noticia = " + Code);
+            Classe.getCommand("SELECT * FROM noticia WHERE cd_categoria = " + Code);
             string Boku = "";
             while (Classe.Selected.Read())
             {
-                Boku += Classe.Selected["cd_noticia"] + "☺" + Classe.Selected["nm_titulo"] + "☺" + Classe.Selected["nm_linha_fina"] + "☺" + Classe.Selected["ds_noticia"] + "☺" + Classe.Selected["nm_usuario"] + "☺" + Classe.Selected["cd_categoria"];
+                if (Classe.Selected["cd_noticia"].ToString() != VARE)
+                {
+                    Boku += Classe.Selected["cd_noticia"] + "☺" + Classe.Selected["nm_titulo"] + "☺" + Classe.Selected["nm_linha_fina"] + "☻";
+
+                }
 
             }
 
