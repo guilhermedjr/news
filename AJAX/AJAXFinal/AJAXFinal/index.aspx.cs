@@ -22,6 +22,7 @@ namespace AJAXFinal
 
             }
 
+            Classe.Refresh();
             Response.Write(Boku);
 
         }

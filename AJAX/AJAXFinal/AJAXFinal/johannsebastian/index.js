@@ -159,3 +159,8 @@ function initPage() {
       });
 
 }
+
+function Stone(Valkenhein){
+  alert(Valkenhein);
+
+}

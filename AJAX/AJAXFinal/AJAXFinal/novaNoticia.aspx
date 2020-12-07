@@ -4,16 +4,21 @@
 
 <html>
 <head>
-    <title></title>
+    <title>Adicionar Notícia</title>
+
 </head>
 <body>
 
     <form id="form1" runat="server">
     <div id="Classer">
-        <asp:TextBox ID="Titulo" runat="server"></asp:TextBox>
-        <asp:TextBox ID="LinhaFina" runat="server"></asp:TextBox>
-        <asp:TextBox ID="Noticia" runat="server"></asp:TextBox>
+        Título
+        <asp:TextBox ID="Titulo" runat="server"></asp:TextBox><br />
+        Linha Fina
+        <asp:TextBox ID="LinhaFina" runat="server"></asp:TextBox><br />
+        Notícia
+        <asp:TextBox ID="Noticia" runat="server"></asp:TextBox><br />
 
+        Categoria
             <asp:DropDownList ID="Categoria" runat="server">
                 <asp:ListItem Text="Política" Value="1"/>
                 <asp:ListItem Text="Economia" Value="2"/>
@@ -24,16 +29,13 @@
 
             </asp:DropDownList>
 
-        <asp:FileUpload ID="Image" runat="server" />
-        <asp:Button ID="Submiter" runat="server" Text="Button" 
-            onclick="Submiter_Click" />
+            <br />
+            Imagem
+        <asp:FileUpload ID="Imagemzin" runat="server" /><br />
+        <asp:Button ID="Submiter" runat="server" Text="Enviar" onclick="Submiter_Click" />
 
     </div>
     </form>
-        
-    <script>
-        var Sub = document.querySelector("#Submiter");
-        Sub.ID = (sessionStorage.getItem('Login'));
-    </script>
+
 </body>
 </html>
