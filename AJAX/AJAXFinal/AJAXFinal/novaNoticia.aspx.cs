@@ -33,7 +33,7 @@ namespace AJAXFinal
             }
             Classe.Refresh();
             Classe.openBar("localhost", "root", "root", "prjNoticias");
-            Classe.setCommand("Insert into noticia values (" + Counter + ",CURRENT_DATE(),CURRENT_TIME(),'" + Title + "','" + AlFine + "','" + Notice + "','2020-08-10','14:02:00'," + Valor + ",2,'" + Logni + "');");
+            Classe.setCommand("Insert into noticia values (" + Counter + ",CURRENT_DATE(),CURRENT_TIME(),'" + Title + "','" + AlFine + "','" + Notice + "','2020-08-10','14:02:00'," + Valor + ",1,'" + Logni + "');");
             Classe.Refresh();
             if (Imagemzin.HasFile)
             {
